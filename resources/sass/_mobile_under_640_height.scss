@@ -1,0 +1,25 @@
+@media only screen and (max-height: 650px) {
+    main{
+        margin-top: 0 !important;
+        .actions{
+            margin-top: 0 !important;
+            gap: 0 !important;
+        }
+        .action{
+            img{
+                width: 50px !important;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                padding-bottom: 1.5em;
+                a{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

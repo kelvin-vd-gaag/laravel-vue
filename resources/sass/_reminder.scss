@@ -1,0 +1,37 @@
+
+.item-main-section {
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        background-color: $blue;
+        color: $broken-white;
+    }
+}
+
+.grateful-image-library{
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid $blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    .item{
+        display: flex;
+        align-items: center;
+        background-color: $broken-white;
+        padding: 1em;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "bodoni";
+    src: url('../fonts/BodoniflfRoman-vmAD.ttf');
+}
+
+@font-face {
+    font-family: "glacial";
+    font-style: normal;
+    src: url('../fonts/GlacialIndifference-Regular.otf');
+}
+
+@import 'variables';
+@import 'account_registration';
+@import "general";
+@import "main_navigation";
+@import "footer";
+@import "mobile_under_640_height";
+@import "gratitude_journal";
+@import "single";
+@import "reminder";
+
+[v-cloak] {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.body {
+    background-color: $broken-white;
+}
+
+header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    margin: 5em auto;
+
+    .not-found-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            width: 80%;
+        }
+
+        a {
+            margin-top: 2em;
+        }
+    }
+
+    .user-name-greeting {
+        text-transform: capitalize;
+    }
+
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .intro {
+        font-weight: 700;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+
+        .greeting {
+            font-family: $font-family-titels;
+            font-size: 1.5em;
+        }
+
+        .call-to-action {
+            font-family: $font-family-text;
+            font-weight: 100 !important;
+            font-size: 0.9em;
+        }
+    }
+
+
+    .header-icon {
+        width: 100px;
+    }
+
+
+    .actions {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        a {
+            text-underline: none;
+            color: $black;
+            width: 90px;
+            height: 130px;
+        }
+
+        .action {
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img {
+            width: 75px;
+        }
+
+        .action-name {
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+

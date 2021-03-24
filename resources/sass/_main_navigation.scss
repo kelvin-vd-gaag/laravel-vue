@@ -1,0 +1,109 @@
+nav{
+    position: absolute;
+    background-color: $broken-white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    transition:0.4s ease;
+    overflow: hidden;
+    ul{
+        height: inherit;
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+        flex-grow:1;
+
+        li{
+            text-align: center;
+            position: relative;
+            padding-bottom: 2.5em;
+            &:after{
+                content : "";
+                position: absolute;
+                vertical-align: middle;
+                left    : 10%;
+                bottom  : 0;
+                height  : 1px;
+                width   : 75%;
+                border-bottom:  2px solid $lilac;
+            }
+
+            a{
+                font-size: 2em;
+                text-transform: uppercase;
+                color: $grey;
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+.logout-url{
+    &:after{
+        content: none !important;
+    }
+}
+
+.fade-leave-active,
+.fade-enter-active {
+    transition: .5s;
+}
+.fade-enter {
+    transform: translateX(-50%) !important;
+}
+.fade-leave-to {
+    transform: translateX(-100%);
+}
+
+/*HAMBURGER MENU*/
+.row .three{
+    padding: 80px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.hamburger .line{
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+    background-color: white;
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+    background-color: white;
+
+}
+
+.is-active{
+    z-index: 10 !important;
+}

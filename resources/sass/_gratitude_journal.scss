@@ -1,0 +1,98 @@
+.item-main-section {
+    width: 80%;
+    .gratitude-list{
+        width: 100%;
+        li{
+            display: flex;
+            flex-direction: row;
+           justify-content: space-between;
+        }
+        .font-weight-bold{
+            padding-left: 30px;
+        }
+    }
+    ul{
+        padding-left: 0;
+    }
+    li {
+        list-style: none;
+
+        background: url(../images/happiness-point.png) left center no-repeat;
+        background-size: 25px;
+        margin: 1em 0;
+        font-family: $font-family-text;
+        transition: 1ms;
+
+
+        /** move the text to the right **/
+        padding-left: 30px;
+        input{
+            margin-right: 5px;
+            width: 20px;
+            border:0 none;
+            &:focus{
+                outline: 0;
+            }
+        }
+        align-items: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .grateful{
+        font-weight: 400;
+        font-size: 1.4em;
+        font-family: $font-family-titels;
+    }
+
+    .form-container{
+        margin-top: -1em;
+
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+
+        flex-direction: row;
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            margin-right: 1em;
+        }
+
+        input[type='text']{
+            text-transform: none;
+            margin-bottom: 0;
+        }
+        .submit-gratitude{
+            font-size: 1em;
+            text-align: center;
+            border-radius: 5px;
+            text-transform: uppercase;
+            padding: 0.5em;
+            letter-spacing: 2px;
+        }
+    }
+
+    .call-form{
+        cursor: pointer;
+        background: url("../images/add.png");
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .gratitude-no-entry{
+        p{
+            text-align: center;
+        }
+    }
+
+}
